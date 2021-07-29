@@ -98,7 +98,7 @@ const imagesArray = document.querySelectorAll('img.lazyload');
 const options = {
   root: null,
   rootMargin: '0px',
-  threshold: 1,
+  threshold: 1.0
 }
 
 const observFunc = (entries, observer) => {
