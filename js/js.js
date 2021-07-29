@@ -98,7 +98,7 @@ const imagesArray = document.querySelectorAll('img.lazyload');
 const options = {
   root: null,
   rootMargin: "0px",
-  threshold: 1.0
+  threshold: 1.0,
 }
 
 const observFunc = (entries, observer) => {
@@ -106,6 +106,7 @@ const observFunc = (entries, observer) => {
 
     if (entry.isIntersecting) {
       console.log('intersecting');
+      console.log(entry.target);
         entry.target.src = entry.target.dataset.src;
         entry.target.classList.add('appear');
       // observer.disconnect();
