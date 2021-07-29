@@ -97,8 +97,8 @@ const imagesArray = document.querySelectorAll('img.lazyload');
 
 const options = {
   root: null,
-  rootMargin: '-50px -50px -50px -50px' ,
-  threshold: 1.0,
+  rootMargin: '0px',
+  threshold: 1,
 }
 
 const observFunc = (entries, observer) => {
@@ -106,11 +106,8 @@ const observFunc = (entries, observer) => {
 
     if (entry.isIntersecting) {
       console.log('intersecting');
-      // if (entry.intersectionRatio >= 0.5) {
-      //   console.log('entry.intersectionRatio', entry.intersectionRatio)
         entry.target.src = entry.target.dataset.src;
         entry.target.classList.add('appear');
-      // }
     }
   });
 }
