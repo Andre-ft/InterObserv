@@ -12,6 +12,9 @@
 } */
 
 .feed img {
+  /* display: block; */
+  /* padding: 0;
+  margin: 0; */
   transform: translateX(-50%);
   opacity: 0;
   transition: all 500ms linear;

@@ -108,6 +108,7 @@ const observFunc = (entries, observer) => {
       console.log('intersecting');
         entry.target.src = entry.target.dataset.src;
         entry.target.classList.add('appear');
+      // observer.disconnect();
     }
   });
 }
