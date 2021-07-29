@@ -97,7 +97,7 @@ const imagesArray = document.querySelectorAll('img.lazyload');
 
 const options = {
   root: null,
-  rootMargin: '0px',
+  rootMargin: '1px',
   threshold: 1.0
 }
 
